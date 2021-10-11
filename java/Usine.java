@@ -11,5 +11,4 @@ abstract class Usine{
   }
 
   public abstract Avion FabriqueAvion(String modeleAvion, String marqueReacteur);
-  public abstract Satellite FabriqueSatellite(String modeleSatellite);
 }
