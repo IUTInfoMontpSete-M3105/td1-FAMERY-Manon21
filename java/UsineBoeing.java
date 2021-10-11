@@ -9,8 +9,13 @@ class UsineBoeing extends Usine{
   }
 
   public Avion FabriqueAvion(String modeleAvion, String marqueReacteur){
-    Boeing monAvion = new Avion (modeleAvion, marqueReacteur);
+    Avion monAvion = new Boeing (modeleAvion, marqueReacteur);
     return monAvion;
+  }
+
+  public abstract Satellite FabriqueSatellite(String modeleSatellite){
+    Satellite monSatellite = new SatelliteTerrestre (modeleSatellite);
+    return monSatellite;
   }
 
 }
